@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+  background-color: #fff;
+}
+
+.contenedor-principal, .tercero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.izquierda-superior, .centro, .derecha-superior{
+  display: flex;
+  align-items: center;
+}
+
+.izquierda-superior{
+  font-size: 30px;
+  margin-top: 8px;
+  padding-left: 18px;
+}
+
+.texto1{
+  font-size: 28px;
+  margin: 0 0 0 130px;
+}
+
+.texto2{
+  font-size: 16px;
+  margin: 10px;
+}
+
+.fa-bell, .fa-moon{
+  margin: 10px;
+  font-size: 25px;
+}
+
+.fa-arrow-left{
+  margin: 0 0 0 30px;
+}
+
+.info1{
+  margin: 18px;
+}
+
+.info2{
+  text-align: center;
+}
+
+.info3{
+  font-size: 12px;
+  margin: 10px;
+}
+
+.textoderecha{
+  text-align: right;
+}
+
+.boton1, .boton2{
+  margin: 2px 0 0 12px;
+  padding: 4px 10px;
+  background-color: #41af64;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.botones{
+  text-align: center;
+  margin-right: 120px;
+}
+
+.boton3, 
+.boton4,
+.boton5,
+.boton6,
+.boton7{
+  margin: 0 0 0 60px;
+  padding: 3px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  position: relative; /*Añadir posición relativa para alinear la línea */
+}
+
+.boton3:hover, 
+.boton4:hover,
+.boton5:hover,
+.boton6:hover,
+.boton7:hover{
+  color: #41af64;
+  border-bottom: 1px solid #41af64; /* Añadir una línea debajo del botón */
+}
+
+.tarjeta{
+  margin: 10px 20px 0 20px;
+  padding: 25px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 4px 5px 8px gray;
+}

@@ -1,0 +1,68 @@
+.botonesTarjetas {
+    justify-content: flex-end;
+    display: flex;
+    gap: 10px; /* Establece el espacio entre los elementos secundarios */
+}
+
+.contenedorBoton {
+    position: relative;
+}
+
+.botonTarjeta1, 
+.botonTarjeta2, 
+.botonTarjeta3, 
+.botonTarjeta4, 
+.botonTarjeta5 {
+    width: 15px; /*ajusta el ancho*/
+    height: 15px; /*ajusta la altura*/
+    padding: 0; /*elimina el espacio interno del boton*/
+    border: 1px solid #ccc;
+    display: block; /*hace que el boton sea un bloque*/
+    margin: 0 auto; /*centra el boton horizontalmente*/
+    position: relative;
+}
+
+.textoEncima {
+    display: none;
+    position: absolute;
+    top: -30px;
+    right: -50px;
+    white-space: nowrap;
+    padding: 5px;
+    font-size: 14px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.textoEncima.mostrar {
+    display: block;
+    transform: translateX(0);
+}
+
+.botonTarjeta1.seleccionado,
+.botonTarjeta2.seleccionado,
+.botonTarjeta3.seleccionado,
+.botonTarjeta4.seleccionado,
+.botonTarjeta5.seleccionado {
+    background-color: #41af64; /* Nuevo color de fondo para el botón 1 cuando está seleccionado */
+    color: #fff; /* Nuevo color del texto para el botón 1 cuando está seleccionado */
+}
+
+
+
+/*.textoEncima {
+    display: none;
+    position: fixed;
+    top: 240px;
+    right: 30px;  Ajusta según sea necesario para la posición desde la derecha 
+    white-space: nowrap;
+    /*padding: 0 3px 5px 0;
+    font-size: 14px;
+    transform: translateX(100%); /* Inicialmente, mueve el texto fuera de la pantalla hacia la derecha 
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave para el efecto 
+}
+
+.textoEncima.mostrar {
+    display: block;
+    transform: translateX(0); Muestra el texto moviéndolo de nuevo a la posición original 
+}*/
